@@ -323,12 +323,12 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         percentile = float(match.group(1))
         category = match.group(3)
         reply = suggest_branches(percentile, category)
-    # else:
-    #     only_number = re.match(r'^[0-9]{2,}(\.[0-9]*)?$', text.strip())
-    #     if only_number:
-    #         reply = "Kripya apni category bhi likhein (jaise: 85 OBC, 90 SC, 92 General, etc.)"
-    #     else:
-    #         reply = "Kripya apna percentile aur category is format me bheje: '85 OBC percentile' ya '90 %tile SC'"
+    else:
+        only_number = re.match(r'^[0-9]{2,}(\.[0-9]*)?$', text.strip())
+        if only_number:
+            reply = "Kripya apni category bhi likhein (jaise: 85 OBC, 90 SC, 92 General, etc.)"
+        else:
+            reply = "Kripya apna percentile aur category is format me bheje: '85 OBC percentile' ya '90 %tile SC'"
     await update.message.reply_text(reply)
 
 # === 4. MAIN BOT RUNNER ===
