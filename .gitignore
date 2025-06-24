@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Environment variables and secrets
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PDF and data files (if not needed in repo)
+*.pdf
+*.xlsx
+*.csv
+
+# Log files
+*.log
+
+# Telegram bot token (if any)
+TELEGRAM_BOT_TOKEN*
+
+# Temporary files
+*.tmp
+*.bak 
