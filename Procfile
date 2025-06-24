@@ -1,0 +1,1 @@
+worker: python extract_and_bot.py
